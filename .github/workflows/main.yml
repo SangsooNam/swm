@@ -27,3 +27,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
+        with:
+          dry: True
+          github_token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
